@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Digital - Yuda2525 Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(120deg, #1e1e3f, #2f0059);
+      font-family: 'Poppins', sans-serif;
+      color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+    header, section {
+      padding: 60px 16px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 16px;
+      animation: fadeIn 1.5s ease-in-out;
+      border-radius: 0 0 32px 32px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      background: rgba(0,0,0,0.4);
+      padding: 12px 18px;
+      display: inline-block;
+      border-radius: 12px;
+    }
+    .section-title {
+      text-align: center;
+      font-family: 'Orbitron';
+      color: #fba80c;
+      font-size: 2rem;
+      margin: 60px 0 30px;
+    }
+    .owner {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    .owner img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fba80c;
+    }
+    .owner-info {
+      font-size: 1rem;
+    }
+    .owner-info h3 {
+      margin-bottom: 4px;
+      color: #fba80c;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .owner-info p {
+      margin: 4px 0;
+    }
+    .package, .project, .about, .feature, .contact, .footer-section {
+      background: rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 32px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .pricing, .features, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .package h3, .feature h3 {
+      font-size: 1.5rem;
+      color: #fba80c;
+      margin-bottom: 12px;
+    }
+    .package p, .feature p, .about p, .contact p {
+      margin: 6px 0;
+    }
+    .float-buttons {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    .float-buttons a img {
+      width: 46px;
+      height: 46px;
+      transition: transform 0.3s;
+      filter: drop-shadow(0 0 4px #fba80c);
+    }
+    .float-buttons a:hover img {
+      transform: scale(1.2);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #140033;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .owner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CV Katalog Digital Yuda2525</h1>
+    <p>Solusi profesional untuk katalog digital, AI Design & portofolio usaha Anda.</p>
+    <div class="owner">
+      <img src="https://avatars.githubusercontent.com/u/138581996?v=4" alt="Foto Owner">
+      <div class="owner-info">
+        <h3>Yuda Bastard</h3>
+        <p>Contact WhatsApp (chat only): <a href="https://wa.me/+6285720906090" target="_blank">+62 857-2090-6090</a></p>
+        <p>Dana (Pembayaran): <strong>+62 857-2090-6090</strong></p>
+        <p>Email: <a href="mailto:yudabastard84@gmail.com">yudabastard84@gmail.com</a></p>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">Layanan & Paket Harga</div>
+    <div class="pricing">
+      <div class="package">
+        <h3>Basic</h3>
+        <p>1 Halaman</p>
+        <p>Desain sederhana</p>
+        <p>Tanpa animasi</p>
+        <p>Harga: Rp150.000</p>
+      </div>
+      <div class="package">
+        <h3>Pro</h3>
+        <p>3 Halaman</p>
+        <p>Desain profesional</p>
+        <p>Animasi interaktif</p>
+        <p>Harga: Rp350.000</p>
+      </div>
+      <div class="package">
+        <h3>Premium</h3>
+        <p>7 Halaman</p>
+        <p>Desain premium custom</p>
+        <p>Efek Parallax + 3D Scroll</p>
+        <p>Harga: Rp700.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="section-title">Tentang Kami</div>
+    <p>Kami adalah tim kreatif yang berfokus pada desain katalog digital, presentasi produk, hingga pembuatan halaman promosi dan profil usaha berbasis AI. Dengan pendekatan modern dan visual yang atraktif, kami membantu UMKM dan bisnis lokal menjadi lebih menonjol dan terpercaya secara digital.</p>
+  </section>
+
+  <section class="features">
+    <div class="section-title">Fitur Unggulan</div>
+    <div class="features">
+      <div class="feature">
+        <h3>Desain AI Kreatif</h3>
+        <p>Gunakan kekuatan AI untuk menciptakan desain yang menyesuaikan kebutuhan dan branding Anda.</p>
+      </div>
+      <div class="feature">
+        <h3>Responsif Mobile/Desktop</h3>
+        <p>Tampilan optimal di semua perangkat pengguna dari smartphone hingga desktop.</p>
+      </div>
+      <div class="feature">
+        <h3>Parallax & Scroll 3D</h3>
+        <p>Pengalaman interaktif dan efek visual yang menawan saat pengguna menjelajahi halaman.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="section-title">Portofolio Proyek</div>
+    <div class="projects">
+      <div class="project">
+        <h3>UMKM Kuliner</h3>
+        <p>Desain katalog promosi makanan khas lokal dengan tema heritage Indonesia.</p>
+      </div>
+      <div class="project">
+        <h3>Franchise Digital</h3>
+        <p>Landing page interaktif untuk produk waralaba dan sistem mitra.</p>
+      </div>
+      <div class="project">
+        <h3>Layanan Jasa Video</h3>
+        <p>Katalog jasa edit video dengan fitur pemesanan langsung via WhatsApp & Dana.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="section-title">Hubungi Kami</div>
+    <p>Untuk konsultasi, pemesanan, atau permintaan desain khusus silakan hubungi kami melalui:</p>
+    <ul>
+      <li>WhatsApp (chat): <a href="https://wa.me/+6285720906090">+62 857-2090-6090</a></li>
+      <li>Email: <a href="mailto:yudabastard84@gmail.com">yudabastard84@gmail.com</a></li>
+      <li>Pembayaran: Dana (cash) saat pemesanan</li>
+      <li>Proses pengerjaan: ± 3 hari kerja</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="footer-section">
+      &copy; 2025 Yuda2525 Digital Studio. All Rights Reserved.<br/>
+      Kami bangga menjadi partner bisnis Anda. Mari jadikan Indonesia lebih berkompeten. Bersama-sama, kita bisa!
+    </div>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="https://wa.me/+6285720906090" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+    <a href="mailto:yudabastard84@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email"></a>
+    <a href="https://youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+    <a href="https://tiktok.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+  </div>
+</body>
+</html>
